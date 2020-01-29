@@ -5,9 +5,9 @@
 #ifndef CPP_RTYPE_2019_HTTPREQUEST_HPP
 #define CPP_RTYPE_2019_HTTPREQUEST_HPP
 
-#include "../HttpHeader/HttpHeader.hpp"
 #include <string>
 #include <vector>
+#include "zia_modules/includes/HttpHeader/HttpHeader.hpp"
 
 struct HttpRequest {
     std::string method;
