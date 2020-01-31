@@ -23,9 +23,9 @@ public:
 protected:
 };
 
-extern "C" IModule *create_object();
+extern "C" IModule *createObject();
 
-extern "C" void destroy_object( IModule *object );
+extern "C" void destroyObject(IModule *object );
 
 
 #endif //CPP_RTYPE_2019_IMODULE_HPP

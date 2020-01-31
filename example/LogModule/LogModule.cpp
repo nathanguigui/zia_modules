@@ -21,11 +21,11 @@ void LogModule::handlePostResponse(HttpRequest &request, HttpResponse &response)
 
 }
 
-extern "C" IModule *create_object() {
+extern "C" IModule *createObject() {
     return new LogModule();
 }
 
-extern "C" void destroy_object( IModule *object ) {
+extern "C" void destroyObject(IModule *object ) {
     delete dynamic_cast<LogModule *>(object);
 }
 
