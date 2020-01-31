@@ -15,5 +15,6 @@ struct HttpResponse {
     int responseCode;
     std::string responseMessage;
     std::vector<HttpHeader> headers;
+    std::string body;
 };
 #endif //CPP_RTYPE_2019_HTTPRESPONSE_HPP
