@@ -17,10 +17,6 @@ void LogModule::handlePreResponse(HttpRequest &request, HttpResponse &response) 
 
 }
 
-void LogModule::handlePostResponse(HttpRequest &request, HttpResponse &response) {
-
-}
-
 void LogModule::handlePreStart(std::vector<ServerInstanceConfig> &instances) {
 
 }

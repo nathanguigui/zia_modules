@@ -5,9 +5,9 @@
 #ifndef CPP_RTYPE_2019_IMODULE_HPP
 #define CPP_RTYPE_2019_IMODULE_HPP
 
-#include "../HttpRequest/HttpRequest.hpp"
-#include "../HttpResponse/HttpResponse.hpp"
-#include "../ServerInstanceConfig/ServerInstanceConfig.hpp"
+#include "src/zia_modules/includes/HttpRequest/HttpRequest.hpp"
+#include "src/zia_modules/includes/HttpResponse/HttpResponse.hpp"
+#include "src/zia_modules/includes/ServerInstanceConfig/ServerInstanceConfig.hpp"
 
 class IModule {
 public:
@@ -17,9 +17,6 @@ public:
 
     /// Hook called before response
     virtual void handlePreResponse(HttpRequest &request, HttpResponse &response) = 0;
-
-    /// Hook called after response
-    virtual void handlePostResponse(HttpRequest &request, HttpResponse &response) = 0;
 
     /// Hook called before zia create all server instances
     virtual void handlePreStart(std::vector<ServerInstanceConfig> &instances) = 0;

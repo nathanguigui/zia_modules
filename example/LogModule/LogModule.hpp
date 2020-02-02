@@ -5,7 +5,7 @@
 #ifndef CPP_ZIA_2019_LOGMODULE_HPP
 #define CPP_ZIA_2019_LOGMODULE_HPP
 
-#include "zia_modules/includes/IModule/IModule.hpp"
+#include "src/zia_modules/includes/IModule/IModule.hpp"
 #include <iostream>
 
 class LogModule : public IModule {
@@ -20,9 +20,6 @@ public:
 
     /// Hook called before response
     void handlePreResponse(HttpRequest &request, HttpResponse &response) override;
-
-    /// Hook called after response
-    void handlePostResponse(HttpRequest &request, HttpResponse &response) override;
 
     /// Hook called before zia create instances
     void handlePreStart(std::vector<ServerInstanceConfig> &instances) override;
