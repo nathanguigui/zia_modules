@@ -24,6 +24,9 @@ public:
     /// Hook called after response
     void handlePostResponse(HttpRequest &request, HttpResponse &response) override;
 
+    /// Hook called before zia create instances
+    void handlePreStart(std::vector<ServerInstanceConfig> &instances) override;
+
 private:
 };
 
