@@ -21,6 +21,10 @@ void LogModule::handlePostResponse(HttpRequest &request, HttpResponse &response)
 
 }
 
+void LogModule::handlePreStart(std::vector<ServerInstanceConfig> &instances) {
+
+}
+
 extern "C" IModule *createObject() {
     return new LogModule();
 }

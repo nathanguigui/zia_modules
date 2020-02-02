@@ -7,6 +7,7 @@
 
 #include "../HttpRequest/HttpRequest.hpp"
 #include "../HttpResponse/HttpResponse.hpp"
+#include "../ServerInstanceConfig/ServerInstanceConfig.hpp"
 
 class IModule {
 public:
@@ -19,6 +20,9 @@ public:
 
     /// Hook called after response
     virtual void handlePostResponse(HttpRequest &request, HttpResponse &response) = 0;
+
+    /// Hook called before zia create all server instances
+    virtual void handlePreStart(std::vector<ServerInstanceConfig> &instances) = 0;
 
 protected:
 };
