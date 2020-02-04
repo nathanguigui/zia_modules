@@ -5,9 +5,9 @@
 #ifndef CPP_RTYPE_2019_IMODULE_HPP
 #define CPP_RTYPE_2019_IMODULE_HPP
 
-#include "src/zia_modules/includes/HttpRequest/HttpRequest.hpp"
-#include "src/zia_modules/includes/HttpResponse/HttpResponse.hpp"
-#include "src/zia_modules/includes/ServerInstanceConfig/ServerInstanceConfig.hpp"
+#include "zia_modules/includes/HttpRequest/HttpRequest.hpp"
+#include "zia_modules/includes/HttpResponse/HttpResponse.hpp"
+#include "zia_modules/includes/ServerInstanceConfig/ServerInstanceConfig.hpp"
 
 class IModule {
 public:

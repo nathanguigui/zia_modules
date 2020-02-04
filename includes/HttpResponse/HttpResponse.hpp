@@ -5,7 +5,7 @@
 #ifndef CPP_RTYPE_2019_HTTPRESPONSE_HPP
 #define CPP_RTYPE_2019_HTTPRESPONSE_HPP
 
-#include "src/zia_modules/includes/HttpHeader/HttpHeader.hpp"
+#include "zia_modules/includes/HttpHeader/HttpHeader.hpp"
 #include <string>
 #include <vector>
 

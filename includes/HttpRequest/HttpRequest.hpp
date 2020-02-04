@@ -7,7 +7,7 @@
 
 #include <string>
 #include <vector>
-#include "src/zia_modules/includes/HttpHeader/HttpHeader.hpp"
+#include "zia_modules/includes/HttpHeader/HttpHeader.hpp"
 
 struct HttpRequest {
     std::string method;
