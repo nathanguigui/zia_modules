@@ -6,6 +6,7 @@
 #define CPP_ZIA_2019_SERVERINSTANCECONFIG_HPP
 
 struct ServerInstanceConfig {
+    boost::asio::ip::tcp::socket client;
     int port;
     bool useTls;
     std::string certificateChainPath;
